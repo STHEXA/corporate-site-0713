@@ -2,7 +2,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 z-50 w-full shadow-md bg-white p-6">
       <div className="flex items-center justify-between">
-        <h1 className="text-6xl font-bold text-zinc-600">CHOTTO</h1>
+        <h1 className="text-6xl font-bold text-zinc-600">コーポレート</h1>
         <nav>
           <ul className="flex items-center gap-6">
             <li>
