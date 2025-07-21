@@ -17,6 +17,12 @@ export default function Hero() {
         >
           お問い合わせはこちら
         </a>
+        <a
+          href="/form-practice"
+          className="inline-block rounded bg-blue-600 px-6 py-3 text-white hover:bg-blue-700 transition"
+        >
+          課題①はこちら
+        </a>
       </div>
     </section>
   );
