@@ -17,9 +17,20 @@ export default function ContactForm() {
 
   const onSubmit = async (data: ContactFormData) => {
     try {
-      console.log(data);
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      if (!res.ok) {
+        throw new Error("送信エラーです。");
+      }
+      console.log(res);
       reset();
     } catch (e) {
+      if (e instanceof Error) {
+        console.log(e.message);
+      }
       console.error(e);
     }
   };
